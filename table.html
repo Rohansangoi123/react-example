@@ -1,0 +1,59 @@
+<html>
+<center>
+<body>
+<style>
+table,th,td{padding:10px;
+
+border:1px solid;background-color:lightblue;}
+  body{background-color:gray;} 
+input{width:130px;}
+table{
+ border-spacing: 10px 0;
+} 
+</style></head>
+<link src="mikku.css">
+<input type="name" id="a" placeholder="enter your s.number"></br>
+<input type="date" id="b" placeholder="date"></br>
+<input type="subject" id="c" placeholder="enter your subject "></br>
+<input type="time" id="d" placeholder="time"></br>
+<input type="image" id="e" placeholder="camera"></br>
+
+<button onclick="enter()">enter</button></br> </br>
+</center> 
+<table style="width:100%">
+
+
+
+<tr>
+<th>s.number</th>
+<th>date</th>
+<th>subject</th>
+<th>time</th>
+<th>image</th>
+</tr>
+<tbody id="data"></tbody>
+</table>
+<script>
+function enter(){
+
+var a=document.getElementById("a").value;
+
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+var e=document.getElementById("e").value;
+
+
+
+
+
+document.getElementById("data").innerHTML += 
+"<tr><td>" + a+ "</td><td>"+b+ 
+"</td><td>"+ c+ "</td><td>"+d+
+"</td><td>"+ e+"</tr>";
+
+}
+</script>
+
+</body>
+</html>
