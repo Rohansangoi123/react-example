@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><form action="action.png" name="action" onsubmit="return validatefome()"method="post">  
+      name <input type="text" name="fname" id="name" required><span class="formerror"></span>
+   <br> <input type="submit" value="submit "></forrm>
+   <script>
+
+
+    function seterror(id,error){
+        Element=document.getElementById();
+        Element.getElementByclassName('formerror')[0].innerHTML=error;
+    }
+
+    function validateform() {
+        var returnvalue=true;
+    }
+    var name=document.forms['myform']["name"].value;
+    if(name.length>5){
+        seterror("name","there is error");
+        returnvalue=false;
+    }
+ return returnvalue;
+   </script>
+</body>
+</html>
