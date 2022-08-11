@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling</title>
+
+    <style>
+h1{
+    text-align: center;color: blueviolet;
+}
+body{
+    background-color: cornflowerblue;border: 2px black;border-image-repeat: not repeat;
+}
+body{
+    
+  background-image: url('https://images.contentstack.io/v3/assets/bltf04078f3cf7a9c30/bltba69dd662366e534/5ffe9e7cfee93e550328c62c/iStock-1277629648.jpg?format=jpg&width=4096&fit=crop&disable=upscale&quality=80');
+;}
+
+
+h4 :hover{background-color: red;
+     
+}
+div{
+    background-color: gray;display: inline-block;font-size: large;color: beige;
+    margin: 4px;padding: 2px;border-radius: 5px;
+}
+   header :hover{
+    background-color: blue;
+   }
+
+   button{
+    background-color: aqua;margin: 4px;padding: 3px;border-radius: 5px;border-color: white;
+   }
+button :hover{background-color: red;
+    
+}
+form{
+    background-color: aquamarine;margin-left: 1000px;margin-right: 100px;
+}
+input{
+    background-color: blueviolet;margin: 3px; padding: 3px;border-radius: 5px;
+}
+
+   form:hover{background-color: green;}
+   input:hover{background-color: brown;}
+   button:hover{background-color: royalblue;}
+
+    </style>
+</head> 
+<body>
+    <h1><u>development </u></h1><br>
+
+<!-- <header class="a">
+<div id="a">contact</div>
+<div>search</div>
+<div>about as</div>
+<div>inform</div>
+</header> -->
+
+<button onclick="contact()" id="a"> contact</button>
+<button onclick="search()" id="b">search </button>
+
+<button onclick="aboutas()" id="c">about as </button>
+<button onclick="inform()" id="d"> inform</button>
+
+
+<h4><a href="http://youtube.com">click </a></h4>
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn on </button>
+  <img id="myImage" src="pic_bulbon.gif" style="width: 400px">
+  <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn off </button>
+  
+<!-- <p id="demo"></p> -->
+
+<script>
+function contact () {
+  document.getElementById("a").innerHTML = "8517982494";
+}
+function search () {
+  document.getElementById("b").innerHTML ="search on google or other search engin";
+}
+function aboutas() {
+  document.getElementById("c").innerHTML = "this to good for anything ";
+}
+function inform () {
+  document.getElementById("d").innerHTML = "profitable to you";
+}
+
+
+</script>
+ 
+</body>
+</html>
